@@ -23,9 +23,9 @@ production:
   encoding: utf8
   database: myapp
   pool: 5
-  username: ubuntu
-  password:
-  socket: /tmp/mysql.sock
+  username: root
+  password: denise
+  socket: /var/run/mysqld/mysqld.sock
 
 cucumber:
   <<: *test
