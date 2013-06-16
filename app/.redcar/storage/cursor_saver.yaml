@@ -1,0 +1,12 @@
+--- 
+cursor_positions: 
+  - :path: controllers/sessions_controller.rb
+    :cursor_offset: 0
+    :timestamp: 2013-06-12 21:55:38 -04:00
+  - :path: assets/stylesheets/custom.css.scss
+    :cursor_offset: 0
+    :timestamp: 2013-06-15 10:52:36 -04:00
+  - :path: controllers/application_controller.rb
+    :cursor_offset: 102
+    :timestamp: 2013-06-10 19:53:16 -04:00
+files_to_retain: 0
