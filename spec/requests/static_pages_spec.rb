@@ -54,7 +54,7 @@ subject { page }
     click_link "Home"
     click_link "Sign up now!"
     page.should have_selector 'title', text: full_title('Sign up')
-    click_link "sample app"
+    click_link "My Application"
     page.should have_selector 'title', text: full_title('')
   end
 
