@@ -5,12 +5,12 @@ set :stages, ["production"]
 
 
 set :default_stage, "production"
-set :application, "sample_app"
+set :application, "SampleApp"
 set :scm, :git
 set :repository, "git@192.168.83.200:/home/git/project.git"
 set :scm_passphrase, "git"
 
-set :user, "deploy"
+set :user, "ubuntu"
 
 
 #set :application, "set your application name here"
@@ -31,10 +31,10 @@ set :user, "deploy"
 # these http://github.com/rails/irs_process_scripts
 
 # If you are using Passenger mod_rails uncomment this:
-# namespace :deploy do
-#   task :start do ; end
-#   task :stop do ; end
-#   task :restart, :roles => :app, :except => { :no_release => true } do
-#     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-#   end
-# end
+ namespace :deploy do
+   task :start do ; end
+   task :stop do ; end
+   task :restart, :roles => :app, :except => { :no_release => true } do
+     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+   end
+ end
