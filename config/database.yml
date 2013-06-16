@@ -23,7 +23,7 @@ production:
   encoding: utf8
   database: myapp
   pool: 5
-  username: root
+  username: ubuntu
   password:
   socket: /tmp/mysql.sock
 
