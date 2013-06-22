@@ -9,6 +9,12 @@ class SessionsController < ApplicationController
     user = User.find_by_email(params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
       # Sign the user in and redirect to the user's show page.
+	if params[:session][:remember] == "1"
+   		cookies.permanent[:remember_token] = user.remember_token
+	else cookies[:remember_token] = user.remember_token
+
+	end
+
 	sign_in user
 	redirect_back_or user
     else
